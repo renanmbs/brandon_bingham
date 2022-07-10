@@ -78,7 +78,7 @@ section {
      /* Preserve aspet ratio */
     overflow: hidden;
     position: relative;
-    background-image: url("/image/home.png");
+    background-image: url('../image/home.png');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
