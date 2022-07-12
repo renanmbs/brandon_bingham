@@ -323,16 +323,8 @@ section {
   }
 
   #home{
-    height: 100%;
-    width: auto;
-  }
-
-  .scroll img{
-    height:90%;
-  }
-
-  #levelor{
-    height: 80%;
+    height: auto;
+    max-width: 100%;
   }
 
 }
