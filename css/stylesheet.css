@@ -75,13 +75,13 @@ section {
   }
 
   #home{
-     /* Preserve aspet ratio */
     overflow: hidden;
     position: relative;
     background-image: url('../image/home.png');
     background-repeat: no-repeat;
-    background-size: cover;
     text-align: center;
+    height: 100%;
+    width: 100%;
   } 
 
   #home:before {
@@ -168,6 +168,7 @@ section {
   max-height: 100%;
   background-color: #0A2342;
   border: 2px solid #B0B7BD;
+  scroll-behavior: smooth;
 }
 
 
@@ -180,19 +181,29 @@ section {
   overflow:hidden;
 }
 
-.levelor{
+#levelor{
   background-color: #fff !important;
   padding-top: 1%;
   height: 100%;
 }
 
-.always{
+.piclinkuni{
+  text-decoration: none;
+  color: #C81F32;
+}
+
+.piclinkuni:hover{
+  text-decoration: underline #DAA520;
+  color: #C81F32;
+}
+
+.scroll img{
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
 
 #contact h1{
-  color:#B0B7BD;
+  color:#C81F32;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -200,10 +211,11 @@ section {
   font-size: 60px;
   font-style: italic;
   text-shadow: 4px 3px 1px #000000;
+  font-style: italic;
+  font-family: serif;
 }
 
 #contact button{
-  margin-top: 15%;
   border-radius: 50px;
   height: 50px;
   width: 200px;
@@ -217,9 +229,7 @@ section {
   background: linear-gradient(150deg,rgba(10,35,66,0.5),rgba(200,31,50,0.5));
 }
 
-
 #contact p{
-  margin-top: 15%;
   color:#DAA520;
   overflow: hidden;
   text-shadow: 4px 3px 1px #000000;
@@ -261,23 +271,7 @@ section {
  .weber{
   padding-top: 0% !important;
  }
-
- .text-block2 {
-  position: relative;
-  bottom: 130px;
-  right: 20px;
-  width: 100%;
-  background-color: #C81F32;
-  opacity: 0.9;
-  color: white;
-  overflow: hidden;
-  padding: 20px;
-  border: 2px solid #DAA520;
-}
-
-.text-block2 h1{
-  color:#0A2342;
-}
+ 
 
  .universities{
     display:inline-table;
@@ -289,5 +283,57 @@ section {
   border: 0px !important;
  }
 
+ #contact img{
+  align-content: center;
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  max-width: 20%;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(to top right,#C81F32AF, #0A2342FF);
+ }
 
+ #contact div{
+  padding-top: 10%;
+ }
+
+ @media screen and (max-width: 1024px) {
+
+  .text-block{
+    font-size: x-small;
+    padding-top: 0px !important;
+  }
+
+  .text-block div{
+    display:inline-table !important;
+  }
+
+
+  .text-block ul{
+    padding-bottom: 1% !important;
+    justify-content: center !important;
+  }
+
+
+  .universities{
+    border-right: 0px !important;
+    display:block;
+  }
+
+  #home{
+    height: 100%;
+    width: auto;
+  }
+
+  .scroll img{
+    height:90%;
+  }
+
+  #levelor{
+    height: 80%;
+  }
+
+}
  
